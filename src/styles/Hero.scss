@@ -41,25 +41,28 @@
 @media screen and (max-width:$breakpointsmall) {
     .hero_container { 
        height:100vh;
-    //    @include center-content();
-        background-size: 100vw  100vw;
-        background:
-            // url('/images/image-mockups.png') no-repeat -170px -290px ,
-            url('/images/bg-intro-mobile.svg') no-repeat  ,
+        background:url('/images/bg-intro-mobile.svg') no-repeat
     }
     .hero_text_container{
-        // @include center-content();
         width:100%;
         height: fit-content;
+        bottom:0;
     }
     .hero_text{
         width:100%;
-        // height: fit-content;
-        // margin-top:20em;
+        height: fit-content;
         bottom:0;
+        width:90%;
         padding: 1rem;
         text-align: center;
-        // position:absolute;
+        position:absolute;
         background-color: $white;
+    }
+    .hero_img > img {
+        top:10px;
+        left:10%;
+        right:15%;
+        height:45%;
+        // width:100%;
     }
 }
