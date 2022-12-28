@@ -24,6 +24,7 @@ export const Navigation = () => {
         {!menu ? <img src='images/icon-hamburger.svg' alt='hamburger' /> : <img src='images/icon-close.svg' alt='exit icon' />}
       </div>
 
+
       <div className={!menu ? 'mobilenav' : 'mobilenavcontainer'}>
         {/* <img src='/images/logo.svg' alt='logo' /> */}
         <div className='mobilenav_items'>

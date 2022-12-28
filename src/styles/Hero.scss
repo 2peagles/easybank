@@ -41,7 +41,8 @@
 @media screen and (max-width:$breakpointsmall) {
     .hero_container { 
        height:100vh;
-        background:url('/images/bg-intro-mobile.svg') no-repeat
+        // right:0;
+        background: url('/images/bg-intro-mobile.svg') no-repeat;
     }
     .hero_text_container{
         width:100%;
