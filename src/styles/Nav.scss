@@ -1,0 +1,60 @@
+@import 'global';
+@import 'layout';
+
+.nav-container{
+    @include nav-container();
+}
+.row{
+    @include row();
+}
+.navlinks{
+    padding:1em 0;
+    margin: .5em;
+    text-transform: capitalize;
+    font-family: $fontfamily;
+    color:$grayish-blue;
+    
+    &:hover { 
+        cursor: pointer;
+            border: {
+                 bottom:.2em solid transparent;
+                 image:$rainbow;
+                 image-slice:1;
+        }
+    }
+}
+
+.mobilenav, .menumobile{
+    display: none;
+}
+
+@media screen and (max-width:$breakpointsmall) {
+    .desktopnav{
+        display: none;
+    }
+    .nav-container{
+        min-height: 10vh;
+    }
+  
+     .menumobile{
+        display: flex;
+        z-index: 2001;
+    }
+    .mobilenavcontainer{
+        @include center-content();
+            text-align: center;
+            height: 40%;
+            width: 90%;
+            top:15%;
+            position: absolute;
+            z-index: 1999;
+            border-radius: .5rem;
+            background-color: white;
+    }
+    .mobilenav_items{
+        .navlinks{
+            padding:0;
+            font-size: 1.5rem;
+        }
+    }
+}

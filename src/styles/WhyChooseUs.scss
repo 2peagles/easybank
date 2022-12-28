@@ -1,0 +1,36 @@
+@import 'global';
+@import 'layout';
+
+.whychooseus_container{
+    @include center-content();
+    padding:4em 0;
+    background-color: $light-grayish-blue;
+
+}
+.container{
+    @include container();
+    h2, h3{
+        color:$dark-blue;
+    }
+    p {
+            color: $grayish-blue;
+        }
+}
+
+.whychooseus_text_container{
+    max-width: 45vw;
+    padding-bottom: 2em;
+}
+.grid{
+    @include grid();
+}
+
+@media screen and (max-width:$breakpointsmall) {
+    .whychooseus_text_container{
+        text-align: center;
+        max-width:100%;
+    }
+    .grid_why{
+        text-align: center;
+    }
+}

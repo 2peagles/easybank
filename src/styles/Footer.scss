@@ -1,0 +1,50 @@
+@import 'global';
+@import 'layout';
+
+// *{border:1px solid black;}
+.footer{
+    @include center-content();
+    padding: 2em 0;
+    color:$grayish-blue;
+    background-color: $dark-blue;
+}
+.footer_grid{
+    @include footergrid();
+}
+.box_one{
+    svg {
+        filter: brightness(118%) contrast(1%);
+    }
+     li{
+        display: inline-block;
+        margin: 2rem .5rem 0;
+        &:hover {
+                color: $lime-green;
+            }
+    }
+}
+.box_two{
+    columns:2;
+    color:$very-light-gray;
+    li{
+        padding:.3rem 0;
+        &:hover {
+                color: $lime-green;
+            }
+    }
+}
+.box_three{
+    text-align: right;
+    p{
+        padding-top:1rem ;
+    }
+}
+@media screen and (max-width:$breakpointsmall) {
+   .box_one,  .box_three{
+        text-align: center;
+    }
+    .box_two{
+        columns: 1;
+        text-align: center;
+    }
+}

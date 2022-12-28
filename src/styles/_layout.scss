@@ -1,0 +1,83 @@
+@import 'global';
+
+@mixin nav-container(){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin left-content() {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+@mixin  center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin right-content {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+@mixin row(){
+    display: flex;
+}
+
+@mixin container(){
+    width:90%;
+    // max-width: $max-width-desktop;
+}
+
+@mixin grid() {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    @media (max-width: $breakpointsmall) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+}
+
+@mixin footergrid() {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2rem;
+    width:100%;
+    @include container();
+    @media (max-width: $breakpointsmall){
+        grid-template-columns: 1fr;
+        
+    }
+}
+@mixin innerfootergrid(){
+    display:grid;
+}
+.btn{
+    font-size: $fontfamily;
+    font-weight: $heavy-fontweight;
+    text-transform: capitalize;
+    color:white;
+    cursor: pointer;
+    border:none;
+    border-radius: 10rem;
+    padding:.5rem 1.5rem;
+    background:$rainbow;
+        &:hover{
+            background:$rainbowhover;
+        }
+}
+
+// @media screen and (max-width:700px) and (max-height:950px) {
+//     @mixin grid() {
+//             grid-template-columns: repeat(1, 1fr);
+//             gap: .5rem;
+//         }
+    
+//         @mixin footergrid() {
+//             grid-template-columns: repeat(1, 1fr);
+//             gap: .5rem;
+//             @include container();
+//         }
+// }

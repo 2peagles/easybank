@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+// Primary Colors
+$dark-blue:hsl(233, 25%, 24%);
+$lime-green:hsl(136, 66%, 51%);
+$bright-blue:hsl(192, 70%, 51%);
+$rainbow: linear-gradient(119deg, rgba(48, 212, 92, 1) 0%, rgba(43, 183, 218, 1) 96%);
+$rainbowhover: linear-gradient(119deg, rgba(48, 212, 92, 0.6) 0%, rgba(43, 183, 218, 0.6) 96%);
+
+// Neutral Colors
+$grayish-blue:hsl(233, 8%, 62%);
+$light-grayish-blue:hsl(220,15%, 96%);
+$very-light-gray:hsl(0, 0%, 98%);
+$white:hsl(0, 0%, 100%);
+// Typography
+$body-fontsize:18px;
+$light-fontweight:300;
+$medium-fontweight:400;
+$heavy-fontweight:700;
+$fontfamily:'Public Sans',sans-serif;
+
+// The designs were created to the following widths:
+$max-width-desktop:1440px;
+// 375
+$breakpointsmall:575px;
+
