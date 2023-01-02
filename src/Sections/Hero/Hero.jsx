@@ -3,7 +3,7 @@ import { Navigation }  from './components/Navigation'
 import '../../styles/Hero.scss'
 const Hero = () => {
   return (
-    <section >
+    <section className='hero_section'>
       <Navigation/>
       <div className='hero_container'>
       <div className='hero_text_container row '>
@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='hero_img'>
-        <img src='/images/image-mockups.png' alt='' />
+        {/* <img src='/images/image-mockups.png' alt='' /> */}
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export const Navigation = () => {
   const handleClick = () => setMenu(!menu);
   return (
     // dekstop menu 
-    <section className='nav-container'>
+    <section className='nav-container' role='navigation'>
       <img src='/images/logo.svg' alt='logo' className='' />
       <div className='row desktopnav'>
         {navdata.map((item, index) => {

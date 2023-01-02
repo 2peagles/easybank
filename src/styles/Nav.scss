@@ -3,6 +3,10 @@
 
 .nav-container{
     @include nav-container();
+    width:100%;
+    z-index: 50000;
+    position: absolute;
+    background-color: #fff
 }
 .row{
     @include row();
@@ -35,7 +39,6 @@
     .nav-container{
         min-height: 10vh;
     }
-  
      .menumobile{
         display: flex;
         z-index: 2001;
@@ -43,9 +46,10 @@
     .mobilenavcontainer{
         @include center-content();
             text-align: center;
-            height: 40%;
+            height: 270%;
             width: 90%;
-            top:15%;
+            top:160%;
+            bottom:0;
             position: absolute;
             z-index: 1999;
             border-radius: .5rem;
