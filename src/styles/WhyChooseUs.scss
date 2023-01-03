@@ -3,9 +3,10 @@
 
 .whychooseus_container{
     @include center-content();
+    // z-index: ;
+    margin-top: 7em;
     padding:4em 0;
     background-color: $light-grayish-blue;
-    z-index: -1;
 }
 .container{
     @include container();

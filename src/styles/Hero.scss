@@ -8,9 +8,9 @@
 .hero_container{
     @include row();
     @include center-content();
-    height:90vh;
+    height:95vh;
     min-height: 340px;
-    max-height: 600px;
+    max-height: 700px;
     background: $light-grayish-blue;
     background:
             url('/images/bg-intro-desktop.svg') no-repeat 640px -250px,
@@ -41,8 +41,6 @@
 @media screen and (max-width:$breakpointsmall) {
     .hero_container { 
        height:100vh;
-        // right:0;
-        // background: url('/images/images-mockups.png') no-repeat ;
         background: url('/images/bg-intro-mobile.svg') no-repeat;
     }
     .hero_text_container{
