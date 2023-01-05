@@ -38,6 +38,7 @@
     @include grid();
     padding:2em 0;
     .box{
+        max-width:320px;
         background-color: $white;
         overflow: hidden;
         padding-bottom: 1rem;
